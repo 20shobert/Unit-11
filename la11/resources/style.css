@@ -185,6 +185,10 @@ select, input[type="date"]  {
   outline: none;
 }
 
+#movie_only, #movie_plus {
+  display: none;
+}
+
 
 /* tablet layout */
 
