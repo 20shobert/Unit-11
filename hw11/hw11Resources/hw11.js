@@ -238,7 +238,7 @@ function uncheckAll(idNum) {
     var sBool = true;
     var cBool = true;
 
-    var dRegNum = 12; // Abilities
+    var dRegNum = 12; // Number of abilities
     var iRegNum = 10;
     var sRegNum = 9;
     var cRegNum = 10;
