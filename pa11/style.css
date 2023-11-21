@@ -106,4 +106,6 @@ input[type="radio"] {
   margin-left: 40px;
 }
 
-
+#singAdd, #cuteAdd, #trickAdd {
+  display: none;
+}
