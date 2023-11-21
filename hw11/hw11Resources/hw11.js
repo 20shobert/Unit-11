@@ -233,84 +233,50 @@ function addListeners() {
 }
 
 function uncheckAll(idNum) {
+    var dBool = true;
+    var iBool = true;
+    var sBool = true;
+    var cBool = true;
 
     var dRegNum = 12; // Abilities
     var iRegNum = 10;
     var sRegNum = 9;
     var cRegNum = 10;
 
-    switch (idNum) { // Unchecking what needs to be unchecked
+    switch (idNum) {
         case 1:
-
-            for (let i=0; i < iRegNum; i++){
-                document.getElementById("i" + (i + 1)).checked = false;
-            }
-            
-            for (let i=0; i < sRegNum; i++){
-                document.getElementById("s" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < cRegNum; i++){
-                document.getElementById("c" + (i + 1)).checked = false;
-            }
-            
-
+            dBool = false;
         break;
         case 2:
-
-            for (let i=0; i < dRegNum; i++){
-                document.getElementById("d" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < sRegNum; i++){
-                document.getElementById("s" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < cRegNum; i++){
-                document.getElementById("c" + (i + 1)).checked = false;
-            }
-            
-            
+            iBool = false;
         break;
         case 3:
-
-            for (let i=0; i < dRegNum; i++){
-                document.getElementById("d" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < iRegNum; i++){
-                document.getElementById("i" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < cRegNum; i++){
-                document.getElementById("c" + (i + 1)).checked = false;
-            }
-            
-
+            sBool = false;
         break;
         case 4:
-
-            for (let i=0; i < dRegNum; i++){
-                document.getElementById("d" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < iRegNum; i++){
-                document.getElementById("i" + (i + 1)).checked = false;
-            }
-            
-
-            for (let i=0; i < sRegNum; i++){
-                document.getElementById("s" + (i + 1)).checked = false;
-            }
-            
-
+            cBool = false;
         break;
+    }
+
+    if (dBool) {
+        for (let i=0; i < dRegNum; i++){
+            document.getElementById("d" + (i + 1)).checked = false;
+        }
+    }
+    if (iBool) {
+        for (let i=0; i < iRegNum; i++){
+            document.getElementById("i" + (i + 1)).checked = false;
+        }
+    }
+    if (sBool) {
+        for (let i=0; i < sRegNum; i++){
+            document.getElementById("s" + (i + 1)).checked = false;
+        }
+    }
+    if (cBool) {
+        for (let i=0; i < cRegNum; i++){
+            document.getElementById("c" + (i + 1)).checked = false;
+        }
     }
     
 }
