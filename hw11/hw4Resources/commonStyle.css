@@ -1,0 +1,71 @@
+header {
+	background-color: #fcf765;
+	
+	height: 150px;
+	margin-left: -45px;
+	margin-right: -45px;
+	margin-top: -10px;
+	
+	border: solid;
+}
+
+@font-face {
+	font-family: donuts;
+	src: url("Monday Donuts.otf");
+}
+
+header p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: donuts;
+	font-size: 100px;
+	
+}
+
+header img.nerdEmojiLeft  {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+header img.nerdEmojiRight  {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-family: donuts;
+}
+
+nav a:link, nav a:visited {
+	background-color: #fcf765;
+	color: #850e05;
+	
+	display: block;
+	
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 40px;
+	
+	border: solid #000000 2px;
+}
+
+nav a:hover {
+	background-color: #fffca6;
+}
+
+h1, h2 {
+	font-family: donuts;
+}

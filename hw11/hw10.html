@@ -1,0 +1,267 @@
+<head id="head">
+
+    <title>Create a Valorant Agent</title>
+    
+    <meta name="description" content="Creating a Valorant Agent">
+    <meta name="keywords" content="Spencer Hobert, CS2350, create a valorant agent, create, a, valorant, agent, valorant, hw10, Homework 10, homework, 10">
+    <link rel="stylesheet" href="hw10Resources/hw10.css">
+    
+</head>
+
+<body>
+    <div id="nav"></div>
+
+    <div class="row">
+    <main class="col-12">
+
+        <h1>Create a Valorant Agent</h1>
+
+        <form method="post" action="https://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+        <section>
+            <fieldset>
+            <legend>Characteristics of the agent</legend>
+
+            <p>
+                <label for="hairColor" class="beforeText">Hair Color:</label>
+                <input type="text" id="hairColor" name="hairColor">
+
+                <input type="text" id="hairColorHex" name="hairColorHex" value="will change color" readonly>
+            </p>
+            <p>
+                <label for="eyeColor" class="beforeText">Eye Color:</label>
+                <input type="text" id="eyeColor" name="eyeColor">
+
+                <input type="text" id="eyeColorHex" name="eyeColorHex" value="will change color" readonly>
+            </p>
+            <p>
+                <label for="ethnicity" class="beforeText">Ethnicity:</label>
+                <input type="text" id="ethnicity" name="ethnicity">
+
+                <input type="text" id="ethnicityHex" name="ethnicityHex" value="will change color" readonly>
+            </p>
+
+            <p>
+                <label for="gender" class="beforeText">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Transgender</option>
+                    <option value="4">None</option>
+                    <option value="5">Unknown</option>
+                </select>
+            </p>
+
+            <p>
+                <label class="beforeText">Agent Class:</label>
+
+                <input type="radio" id="class1" name="classType" value="duelist">
+                <label for="class1" class="radio">Duelist</label>
+
+                <input type="radio" id="class2" name="classType" value="initiator">
+                <label for="class2" class="radio">Initiator</label>
+
+                <input type="radio" id="class3" name="classType" value="sentinel">
+                <label for="class3" class="radio">Sentinel</label>
+
+                <input type="radio" id="class4" name="classType" value="controller">
+                <label for="class4" class="radio">Controller</label>
+            </p>
+
+            <fieldset id="duelistCollapsable">
+            <legend>Duelist Options (will collapse)</legend>
+
+                <p>
+                    <label class="afterText">Movement Ability:</label>
+
+                    <input type="radio" id="duelistMovement1" name="duelistMovementType" value="dash">
+                    <label for="duelistMovement1" class="radio">Dash</label>
+
+                    <input type="radio" id="duelistMovement2" name="duelistMovementType" value="satchel">
+                    <label for="duelistMovement2" class="radio">Satchel</label>
+
+                    <input type="radio" id="duelistMovement3" name="duelistMovementType" value="dismiss">
+                    <label for="duelistMovement3" class="radio">Dismiss</label>
+
+                    <input type="radio" id="duelistMovement4" name="duelistMovementType" value="teleport">
+                    <label for="duelistMovement4" class="radio">Teleport</label>
+
+                    <input type="radio" id="duelistMovement5" name="duelistMovementType" value="sprint">
+                    <label for="duelistMovement5" class="radio">Sprint</label>
+                </p>
+
+                <p>
+                    <label class="afterText">Ultimate Ability:</label>
+
+                    <input type="radio" id="duelistUltimate1" name="duelistUltimateType" value="killContract">
+                    <label for="duelistUltimate1" class="radio">Kill Contract</label>
+
+                    <input type="radio" id="duelistUltimate2" name="duelistUltimateType" value="knives">
+                    <label for="duelistUltimate2" class="radio">Knives</label>
+
+                    <input type="radio" id="duelistUltimate3" name="duelistUltimateType" value="overdrive">
+                    <label for="duelistUltimate3" class="radio">Overdrive</label>
+
+                    <input type="radio" id="duelistUltimate4" name="duelistUltimateType" value="runItBack">
+                    <label for="duelistUltimate4" class="radio">Run It Back</label>
+
+                    <input type="radio" id="duelistUltimate5" name="duelistUltimateType" value="showStopper">
+                    <label for="duelistUltimate5" class="radio">Show Stopper</label>
+
+                    <input type="radio" id="duelistUltimate6" name="duelistUltimateType" value="empress">
+                    <label for="duelistUltimate6" class="radio">Empress</label>
+
+                    <input type="radio" id="duelistUltimate7" name="duelistUltimateType" value="dimensionalDrift">
+                    <label for="duelistUltimate7" class="radio">Dimensional Drift</label>
+                </p>
+
+            </fieldset>
+            <fieldset id="initiatorCollapsable">
+            <legend>Initiator Options (will collapse)</legend>
+
+                <p>
+                    <label class="afterText">Flash Ability:</label>
+
+                    <input type="radio" id="initiatorFlash1" name="initiatorFlashType" value="flashpoint">
+                    <label for="initiatorFlash1" class="radio">Flashpoint</label>
+
+                    <input type="radio" id="initiatorFlash2" name="initiatorFlashType" value="dizzy">
+                    <label for="initiatorFlash2" class="radio">Dizzy</label>
+
+                    <input type="radio" id="initiatorFlash3" name="initiatorFlashType" value="flashDrive">
+                    <label for="initiatorFlash3" class="radio">FLASH/drive</label>
+
+                    <input type="radio" id="initiatorFlash4" name="initiatorFlashType" value="guidingLight">
+                    <label for="initiatorFlash4" class="radio">Guiding Light</label>
+                </p>
+
+                <p>
+                    <label class="afterText">Ultimate Ability:</label>
+
+                    <input type="radio" id="initiatorUltimate1" name="initiatorUltimateType" value="rollingThunder">
+                    <label for="initiatorUltimate1" class="radio">Rolling Thunder</label>
+
+                    <input type="radio" id="initiatorUltimate2" name="initiatorUltimateType" value="nightfall">
+                    <label for="initiatorUltimate2" class="radio">Nightfall</label>
+
+                    <input type="radio" id="initiatorUltimate3" name="initiatorUltimateType" value="thrash">
+                    <label for="initiatorUltimate3" class="radio">Thrash</label>
+
+                    <input type="radio" id="initiatorUltimate4" name="initiatorUltimateType" value="nullCmd">
+                    <label for="initiatorUltimate4" class="radio">NULL/cmd</label>
+
+                    <input type="radio" id="initiatorUltimate5" name="initiatorUltimateType" value="seekers">
+                    <label for="initiatorUltimate5" class="radio">Seekers</label>
+
+                    <input type="radio" id="initiatorUltimate6" name="initiatorUltimateType" value="huntersFury">
+                    <label for="initiatorUltimate6" class="radio">Hunter's Fury</label>
+                </p>
+
+            </fieldset>
+            <fieldset id="sentinelCollapsable">
+            <legend>Sentinel Options (will collapse)</legend>
+
+                <p>
+                    <label class="afterText">Trip Ability:</label>
+
+                    <input type="radio" id="sentielTrip1" name="sentielTripType" value="trademark">
+                    <label for="sentielTrip1" class="radio">Trademark</label>
+
+                    <input type="radio" id="sentielTrip2" name="sentielTripType" value="trapwire">
+                    <label for="sentielTrip2" class="radio">Trapwire</label>
+
+                    <input type="radio" id="sentielTrip3" name="sentielTripType" value="sonicSensor">
+                    <label for="sentielTrip3" class="radio">Sonic Sensor</label>
+
+                    <input type="radio" id="sentielTrip4" name="sentielTripType" value="alarmbot">
+                    <label for="sentielTrip4" class="radio">Alarmbot</label>
+                </p>
+
+                <p>
+                    <label class="afterText">Ultimate Ability:</label>
+
+                    <input type="radio" id="sentinelUltimate1" name="sentinelUltimateType" value="tourDeForce">
+                    <label for="sentinelUltimate1" class="radio">Tour De Force</label>
+
+                    <input type="radio" id="sentinelUltimate2" name="sentinelUltimateType" value="neuralTheft">
+                    <label for="sentinelUltimate2" class="radio">Neural Theft</label>
+
+                    <input type="radio" id="sentinelUltimate3" name="sentinelUltimateType" value="annihilation">
+                    <label for="sentinelUltimate3" class="radio">Annihilation</label>
+
+                    <input type="radio" id="sentinelUltimate4" name="sentinelUltimateType" value="lockdown">
+                    <label for="sentinelUltimate4" class="radio">Lockdown</label>
+
+                    <input type="radio" id="sentinelUltimate5" name="sentinelUltimateType" value="resurrection">
+                    <label for="sentinelUltimate5" class="radio">Resurrection</label>
+                </p>
+
+            </fieldset>
+            <fieldset id="controllerCollapsable">
+            <legend>Controller Options (will collapse)</legend>
+
+                <p>
+                    <label class="afterText">Smoke Ability:</label>
+
+                    <input type="radio" id="controllerSmoke1" name="controllerSmokeType" value="nebula">
+                    <label for="controllerSmoke1" class="radio">Nebula</label>
+
+                    <input type="radio" id="controllerSmoke2" name="controllerSmokeType" value="skySmoke">
+                    <label for="controllerSmoke2" class="radio">Sky Smoke</label>
+
+                    <input type="radio" id="controllerSmoke3" name="controllerSmokeType" value="highTide">
+                    <label for="controllerSmoke3" class="radio">High Tide</label>
+
+                    <input type="radio" id="controllerSmoke4" name="controllerSmokeType" value="darkCover">
+                    <label for="controllerSmoke4" class="radio">Dark Cover</label>
+
+                    <input type="radio" id="controllerSmoke5" name="controllerSmokeType" value="poisonCloud">
+                    <label for="controllerSmoke5" class="radio">Poison Cloud</label>
+                </p>
+
+                <p>
+                    <label class="afterText">Ultimate Ability:</label>
+
+                    <input type="radio" id="controllerUltimate1" name="controllerUltimateType" value="cosmicDivide">
+                    <label for="controllerUltimate1" class="radio">Cosmic Divide</label>
+
+                    <input type="radio" id="controllerUltimate2" name="controllerUltimateType" value="orbitalStrike">
+                    <label for="controllerUltimate2" class="radio">Orbital Strike</label>
+
+                    <input type="radio" id="controllerUltimate3" name="controllerUltimateType" value="reckoning">
+                    <label for="controllerUltimate3" class="radio">Reckoning</label>
+
+                    <input type="radio" id="controllerUltimate4" name="controllerUltimateType" value="fromTheShadows">
+                    <label for="controllerUltimate4" class="radio">From the Shadows</label>
+
+                    <input type="radio" id="controllerUltimate5" name="controllerUltimateType" value="vipersPit">
+                    <label for="controllerUltimate5" class="radio">Viper's Pit</label>
+                </p>
+
+            </fieldset>
+            
+
+            </fieldset>
+
+            <br>
+            <input type="submit" id="submit" name="submit" value="Submit">
+
+        </section>
+        </form>
+
+    </main>
+    </div>
+
+    <div>
+        <footer>
+            <section>
+            <p>
+                Spencer Hobert<br>
+                CS 2350<br>
+                Weber State University
+            </p>
+            </section>
+        </footer>
+    </div>
+
+<script src="hw8Resources/commonJS.js"></script>
+</body>

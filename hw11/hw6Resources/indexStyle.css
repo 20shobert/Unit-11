@@ -1,0 +1,353 @@
+:root{
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+* ::after ::before {
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+
+/* Mobile Layout */
+
+main section p, main section pre {
+	font-family: handlee;
+	font-size: 18px;
+
+	padding-left: 12px;
+}
+
+main section {
+	background-color: #fffca6;
+	border: 1px solid #850e05;
+	box-shadow: 0 4px 8px #5c5b3f;
+	border-radius: 6px;
+	margin: 25px 0px 25px 0px;
+	padding: 12px 12px 12px 12px;
+}
+
+pre { /* Fixed the left and right scrolling issue */
+	white-space: pre-wrap;
+}
+
+main section img {
+	float: right;
+	max-height: 120px;
+	max-width: 250px;
+	width: auto;
+}
+
+/* Gekko Thing */
+aside section p {
+	font-family: handlee;
+	font-size: 18px;
+
+	padding-left: 12px;
+}
+
+aside section {
+	background-color: #fcf765;
+	border: 1px solid #850e05;
+	box-shadow: -4px 4px 8px #5c5b3f;
+	border-radius: 6px;
+	margin: 25px 0px 25px 0px;
+	padding: 12px 12px 12px 12px;
+}
+
+aside section.elementAside {
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	border: 0;
+	border-radius: 0;
+	box-shadow: 0 0 0;
+}
+
+aside section img.characterImg {
+	float: right;
+	max-height: 200px;
+	height: auto;
+}
+
+aside section img.abilityImg {
+	float: right;
+	max-height: 100px;
+	height: auto;
+
+	margin-left: 5px;
+}
+
+/* commonStyle Stuff */
+
+@font-face {
+	font-family: donuts;
+	src: url("Monday Donuts.otf");
+}
+
+@font-face {
+	font-family: handlee;
+	src: url("Handlee-Regular.ttf");
+}
+
+/* Header */
+header {
+	background-color: #fcf765;
+	
+	height: 60px;
+	border-bottom: solid;
+	width: 100%;
+}
+
+header p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: donuts;
+	font-size: 30px;
+	
+}
+
+header img {
+	position: absolute;
+	top: 0;
+	max-height: 60px;
+	width: auto;
+}
+
+header img.explosionImgLeft  {
+	left: 0;
+}
+
+header img.explosionImgRight  {
+	right: 0;
+}
+
+
+/* Naviagation */
+nav ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	font-family: donuts;
+	font-size: 20px;
+}
+
+nav a:link, nav a:visited {
+	background-color: #fcf765;
+	color: #850e05;
+	
+	display: inline-block;
+	
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	line-height: 40px;
+	
+	border-bottom: solid #000000 2px;
+}
+
+h1 {
+	text-align: center;
+
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h1, h2 {
+	font-family: donuts;
+	margin-bottom: 0;
+}
+
+footer section p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: handlee;
+	font-size: 15px;
+	
+}
+
+footer {
+	background-color: #fcf765;
+	
+	height: 100px;
+	
+	border-top: solid;
+}
+
+/* End of Common Style Stuff */
+
+/* Tablet Layout */
+@media only screen and (min-width: 768px) {
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+
+	[class*="col-"] {
+		float: left;
+		padding: 15px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: center;
+		font-size: 18px;
+	}
+	
+	nav a:link, nav a:visited {
+		width: 200px;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+		border-left: solid #000000 2px;
+		border-right: solid #000000 2px;
+	}
+
+	main {
+		margin-bottom: 0px;
+		padding-bottom: 1px;
+	}
+
+	aside {
+		margin-top: 0px;
+		padding-top: 1px;
+	}
+
+	aside section img.characterImg {
+		max-height: 250px;
+	}
+
+	.backgroundAside {
+		margin-top: 0;
+
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.mainAside {
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		border: 0;
+		border-radius: 0;
+		box-shadow: 0 0 0;
+	}
+	.abilityAside {
+		margin-top: 0;
+		padding-top: 0;
+
+		border: 0;
+		border-radius: 0;
+		box-shadow: 0 0 0;
+	}
+
+}
+
+
+/* Desktop Layout */
+@media only screen and (min-width: 1120px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+	main {
+		border-right: solid;
+		border-radius: 6px;
+	}
+
+	main section {
+		box-shadow: -4px 4px 8px #5c5b3f;
+
+		transition: box-shadow 1s;
+	}
+
+	main section:hover {
+		box-shadow: -8px 8px 8px #5c5b3f;
+	}
+
+	main section img {
+		height: auto;
+	}
+
+	aside {
+		border-left: solid;
+		border-radius: 6px;
+	}
+	
+	nav a:hover {
+		background-color: #fffca6;
+	}
+
+	header {
+		height: 150px;
+	}
+
+	header p {
+		font-size: 100px;
+	}
+
+	header img {
+		max-height: 150px;
+	}
+}
+
+.celOne {
+	background-color: #ff4949;
+	color: #00008b;
+}
+.celTwo {
+	background-color: #ff7a2c;
+	color: #2e1b36;
+}
+.celThree {
+	background-color: #ffee2c;
+	color: #550000;
+}
+.celFour {
+	background-color: #c3fdb5;
+	color: #468828;
+}
+.celFive {
+	background-color: #8dbeff;
+	color: #0000ff;
+}

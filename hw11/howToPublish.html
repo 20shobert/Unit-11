@@ -1,0 +1,130 @@
+<head id="head">
+	<title>How To Publish Onto Icarus</title>
+	<meta name="description" content="How to publish onto Icarus using a Chromebook">
+	<meta name="keywords" content="spencer, hobert, icarus, how to publish, chromebook">
+</head>
+
+<body>
+    <div id="nav"></div>
+    
+	<h1>How To Publish Onto Icarus</h1>
+    <h6>(I'm using a Chromebook, so this will be a tutorial for how to publish using a Chromebook)</h6>
+    
+    <h2>Step 1</h2>
+    <p>
+        The very first thing you're going to do is ensure you have Linux Developmental Environment (LDE) turned on.
+        <br>
+        A Chromebook can't do very much without LDE turned on, so let's go ahead and turn it on now.
+        <br>
+        If it's already turned on, skip to step 2.
+        <br>
+    </p>
+    <ol>
+        <li>Open up the settings</li>
+        <li>Under advanced settings, click on Developers, then Linux developmental environment</li>
+        <li>Select 'Turn On'</li>
+        <li>Follow the prompts, then move onto Step 2 once completed</li>
+    </ol>
+    
+    <h2>Step 2</h2>
+    <ol>
+        <li>Open up the terminal</li>
+        <li>Under SSH, click 'Add SSH'</li>
+        <li>Now, you'll have to know your username to login.<br>
+            It starts with your initials (for me that's sh)<br>
+            Then, you'll need the last five numbers of your W#<br>
+            So, the entire username should be [initials][last 5].<br>
+            For me, that will be sh48653.</li>
+        <li>Once you have your username, type that into the 'Command' field<br>
+            Follow your username by '@icarus.cs.weber.edu'<br>
+            So, the field should look like '[username]@icarus.cs.weber.edu'<br>
+            For me, it will look like 'sh48653@icarus.cs.weber.edu'</li>
+        <li>Once completed, click 'Save'<br>
+            <img src="images/sshDonePic_opt.jpeg" alt="Picture of SSH window with Done button circled" width="683" height="356"></li>
+    </ol>
+    
+    <h2>Step 3</h2>
+    <ol>
+        <li>After you click save, you should have the address listed under SSH.<br>
+            On the right side of the new address for Icarus, there should be three dots, signaling Options. Click that.<br>
+            'Mount to Files' should come up. Click that too.</li>
+        <li>Clicking will connect you to Icarus, and it should ask for a password<br>
+            If you've logged into icarus before, you should know what to type here. Skip to step 5.<br>
+            If not, follow to step 4.<br>
+            <img src="images/icarusWantPassPic_opt.jpeg" alt="Picture of Icarus wanting a password" width="683" height="356"></li>
+    </ol>
+
+    <h2>Step 4</h2>
+    <ol>
+        <li>You will need quite a bit of information for your password. Sorry. Not my fault.<br>
+            You will need:<br>
+            Your initials (first, last), lowercase.<br>
+            First 5 digits of your w#.<br>
+            Lowest numbered CS/NET/WEB class being taken this current semester.<br>
+        </li>
+        <li>Example ( W + initials + ~ + w# + soc + class number)<br>
+            initials: fl<br>
+            W#: 12345<br>
+            Lowest class: CS 1030</li>
+        <li>Temp password:  Wfl~12345soc1030</li>
+        <li>Once you get this information, type this into the password field, and click enter.</li>
+    </ol>
+
+    <h2>Step 5</h2>
+    <ol>
+        <li>Once you have your password typed in, click done.<br>
+            A box saying, 'Mounted!' should appear.<br>
+            From this point on, don't close the window with Icarus on it! Otherwise, you won't be able to upload your files.<br>
+            Your computer is now ready to upload files to Icarus!</li>
+        <li>Open up your file exporer.<br>
+            On the left side, there should be a new folder. This folder is where you will upload your files to Icarus.<br>
+            <img src="images/fileUploadPic_opt.jpeg" alt="Picture of icarus on the left side of file explorer" width="683" height="356"></li>
+        <li>Just drag and drop your files into the folder, and boom! It should upload.<br>
+            You're done uploading the files!</li>
+    </ol>
+    
+    <h2>Step 6</h2>
+    You should be done! The only thing you have to worry about now is how to access the website.
+    <ol>
+        <li>Put your html file in the public_html folder. The name doesn't matter.<br>
+            In this example, the file name is wise.png.<br>
+            <img src="images/wiseFilePic_opt.jpeg" alt="Picture of html file called wise.html in file explorer" width="683" height="356"><br>
+            In order to access it on the website, in your web browser, type 'https://icarus.cs.weber.edu/~[username]/[fileName].html'<br>
+            This will take you to the website:<br>
+            <img src="images/wiseWebsitePic.png" alt="Picture of wise.html webiste">
+        </li>
+        <li>If you want to put the file in another folder, here's how you would go about it:<br>
+            Ensure the folder is in public_html<br>
+            <img src="images/testFilePic_opt.jpeg" alt="Picture of test.html in a Test folder in file explorer" width="683" height="356"><br>
+            In order to access this file, in your web browser, type 'https://icarus.cs.weber.edu/~[username]/[folderName]/[fileName].html'<br>
+            This will take you to the website:<br>
+            <img src="images/testWebsitePic.png" alt="Picture of test.html website"></li>
+        <li>If you don't want the user to have to type in the file name, here's how you do that:<br>
+            This time, the file name does matter. Name the file 'index.html'.<br>
+            <img src="images/indexFilePic_opt.jpeg" alt="Picture of index.html in file explorer" width="683" height="356"><br>
+            The website link should look something like this: 'https://icarus.cs.weber.edu/~[username]'<br>
+            This will take you to the website:<br>
+            <img src="images/indexWebsitePic.png" alt="Picture of index.html website"></li>
+
+    </ol>
+    
+    <h2>Step 7</h2>
+    <p>
+        Have fun!
+    </p>
+    
+    <div>
+        <footer>
+            <section>
+            <p>
+                Spencer Hobert<br>
+                CS 2350<br>
+                Weber State University
+            </p>
+            </section>
+        </footer>
+    </div>
+    
+<script src="hw8Resources/commonJS.js"></script>
+</body>
+</html>

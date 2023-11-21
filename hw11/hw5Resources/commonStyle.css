@@ -1,0 +1,133 @@
+header {
+	background-color: #fcf765;
+	
+	height: 150px;
+	margin-left: -45px;
+	margin-right: -45px;
+	margin-top: -10px;
+	
+	border-bottom: solid;
+}
+
+@font-face {
+	font-family: donuts;
+	src: url("Monday Donuts.otf");
+}
+
+@font-face {
+	font-family: handlee;
+	src: url("Handlee-Regular.ttf");
+}
+
+header p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: donuts;
+	font-size: 100px;
+	
+}
+
+header img.explosionImgLeft  {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+header img.explosionImgRight  {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	font-family: donuts;
+}
+
+nav a:link, nav a:visited {
+	background-color: #fcf765;
+	color: #850e05;
+	
+	display: inline-block;
+	
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 40px;
+	
+	border-left: solid #000000 2px;
+	border-right: solid #000000 2px;
+	border-bottom: solid #000000 2px;
+}
+
+nav a:hover {
+	background-color: #fffca6;
+}
+
+h1, h2 {
+	font-family: donuts;
+	margin-bottom: 0;
+}
+
+/* column stuff */
+
+* {
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* end of column stuff */
+
+footer section p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: handlee;
+	font-size: 15px;
+	
+}
+
+footer {
+	background-color: #fcf765;
+	
+	height: 100px;
+	margin-left: -45px;
+	margin-right: -45px;
+	margin-bottom: -10px;
+	
+	border-top: solid;
+}

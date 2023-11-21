@@ -1,0 +1,28 @@
+Common Style Decisions for Website
+
+color scheme:
+
+
+background color/image: 
+
+
+font style: 
+
+
+text color:
+
+
+link style: 
+
+
+link style on hover:
+
+
+h1-h6 style:
+
+
+margins:
+
+
+padding:
+

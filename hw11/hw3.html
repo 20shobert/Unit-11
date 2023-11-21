@@ -1,0 +1,169 @@
+<head id="head">
+
+<title>Using CSS</title>
+
+<meta name="description"
+content="Explaining how to create a website using CSS.">
+<meta name="keywords" content="css, adding css, css concepts, using CSS, Spencer Hobert, css shadow, css box model, css position, css color contrast, css hover">
+<link rel="stylesheet" href="HW3/style.css">
+
+</head>
+
+<body>
+	<div id="nav"></div>
+
+	<h1>Using CSS</h1>
+
+	<br>
+
+	<h2>The CSS Box Model</h2>
+	<img src="HW3/Box-model.png" alt="The CSS box model" width="510" height="390">
+	<ol>
+		<li>Margin: The gap between elements</li>
+		<li>Border: The literal border element that you can color</li>
+		<li>Padding: The gap between the border and text</li>
+		<li>Content: The text that you want to display</li>
+	</ol>
+
+	<br>
+
+	<h2>The Padding Property</h2>
+
+	<div class="divOnePad">
+		<p>This div has the same padding on all sides</p>
+	</div>
+	<div class="divTwoPad">
+		<p>This div's top padding is equal to its bottom padding, and left padding is equal to its right padding</p>
+	</div>
+	<div class="divThreePad">
+		<p>Every side of this div has different padding</p>
+	</div>
+
+	<br>
+
+	<h2>The Margin Property</h2>
+
+	<div class="divOneMar">
+		<p>This div has the default margin-left property</p>
+	</div>
+	<div class="divTwoMar">
+		<p>This div has margin-left set to 50px</p>
+	</div>
+	<div class="divThreeMar">
+		<p>This div has margin-left set to 160px</p>
+	</div>
+
+	<br>
+
+	<h2>Changing Style on Hover</h2>
+
+	<p>Hovering is when you move your mouse cursor over something, but don't click</p>
+	<div class="divOneHov">
+		<p>This div will do nothing when you hover over it</p>
+	</div>
+	<div class="divTwoHov">
+		<p>This div will change colors when you hover over it</p>
+	</div>
+	<div class="divThreeHov">
+		<p>This div get smaller when you hover over it</p>
+	</div>
+
+	<br>
+
+	<h2>Color Contrast</h2>
+
+	<table class="table">
+		<tr>
+			<th>Text</th>
+			<th>Background Color</th>
+			<th>Text Color</th>
+			<th>Contrast Ratio</th>
+			<th>Rating</th>
+		</tr>
+		<tr>
+			<td class="celOne">Blirble girble Blirble girble</td>
+			<td>#ff4949</td>
+			<td>#00008b</td>
+			<td>4.58</td>
+			<td>AA</td>
+		</tr>
+		<tr>
+			<td class="celTwo">Girble blirble newth nieth</td>
+			<td>#ff7a2c</td>
+			<td>#2e1b36</td>
+			<td>6.08</td>
+			<td>AA</td>
+		</tr>
+		<tr>
+			<td class="celThree">Pelath menlatlie mantaelia</td>
+			<td>#ffee2c</td>
+			<td>#550000</td>
+			<td>12.63</td>
+			<td>AAA</td>
+		</tr>
+		<tr>
+			<td class="celFour">Yutgh bghargn mbmeaclms aehth</td>
+			<td>#c3fdb5</td>
+			<td>#468828</td>
+			<td>3.74</td>
+			<td>None</td>
+		</tr>
+		<tr>
+			<td class="celFive">Apple banana champagne glass bottle</td>
+			<td>#8dbeff</td>
+			<td>#0000ff</td>
+			<td>4.47</td>
+			<td>None</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<h2>Position</h2>
+
+	<p>1. Relative Position: Moves where the text/image is displayed according to where it usually is. So, if you tell it to go up 30px, it will go up 30px from where it was originally.</p>
+	<p>This picture has the Relative Position attribute applied to it, and it was moved right 800px, and up 50px:</p>
+	<img src="HW3/meme.jpg" alt="Coding meme" class="relPos" width="450" height="450">
+
+	<br>
+	<p>2. Absolute Position: Unattaches the text/picture from its normal position and instead moves it to its nearest positioned ancestor. If the text/picture is embedded in two div's, it will move it to the first div. If there's no ancestors, it will move to the top of the website.</p>
+	<p>This picture has the Absolute Position attribute applied to it. It was also moved down 4200px, and right 900px:</p>
+	<img src="HW3/meme.jpg" alt="Coding meme" class="absPos" width="450" height="450">
+
+	<br>
+	<p>3. Fixed Position: Moves the picture to always follow the viewport.</p>
+	<p>The image at the top-right side of your screen? Yeah. That's it.</p>
+	<img src="HW3/meme.jpg" alt="Coding meme" class="fixPos" width="225" height="225">
+
+	<br>
+
+	<h2>Text Shadow</h2>
+
+	<p>1. Horizontal Property: This moves the shadow to the left (negative number) or to the right (positive number).</p>
+	<p class="horShadowSmall">This Horizontal Property is small</p>
+	<p class="horShadowBig">This Horizontal Property is big</p>
+
+	<br>
+	<p>2. Vertical Property: This moves the shadow up (negative number) or to down (positive number).</p>
+	<p class="verShadowSmall">This Vertical Property is small</p>
+	<p class="verShadowBig">This Vertical Property is big</p>
+
+	<br>
+	<p>3. Blur Property: This makes the shadow clear (small number) or blurry (big number).</p>
+	<p class="blurShadowSmall">This Blur Property is small</p>
+	<p class="blurShadowBig">This Blur Property is big</p>
+
+	<div>
+		<footer>
+			<section>
+			<p>
+				Spencer Hobert<br>
+				CS 2350<br>
+				Weber State University
+			</p>
+			</section>
+		</footer>
+	</div>
+
+<script src="hw8Resources/commonJS.js"></script>
+</body>

@@ -1,0 +1,151 @@
+h1 {
+	text-align: center;
+}
+
+body.not(header, nav) {
+	background-color: #FFFFFF;
+	font-size: large;
+}
+
+
+.divOnePad {
+	background-color: #eb8e8e;
+	border: #ff5e5e dashed 3px;
+	width: 300px;
+	padding: 50px 50px 50px 50px;
+	text-align: center;
+}
+.divTwoPad {
+	background-color: #ffb184;
+	border: #ff7f5e dotted 3px;
+	width: 300px;
+	padding: 20px 150px 20px 150px;
+	text-align: center;
+}
+.divThreePad {
+	background-color: #ebe58e;
+	border: #ffcd45 double 3px;
+	width: 300px;
+	padding: 150px 100px 70px 40px;
+	text-align: center;
+}
+
+
+.divOneMar {
+	background-color: #b5fde2;
+	border: #3cffd5 dashed 3px;
+	width: 200px;
+	padding: 80px;
+	text-align: center;
+}
+.divTwoMar {
+	background-color: #9097fc;
+	border: #0f55b1 dotted 3px;
+	width: 200px;
+	padding: 80px;
+	margin-left: 50px;
+	text-align: center;
+}
+.divThreeMar {
+	background-color: #ce84ff;
+	border: #a520fd double 3px;
+	width: 200px;
+	padding: 80px;
+	margin-left: 160px;
+	text-align: center;
+}
+
+
+.divOneHov {
+	background-color: #eb8e8e;
+	border: #ff5e5e dashed 3px;
+	width: 500px;
+	padding: 80px;
+	margin-left: 50px;
+	text-align: center;
+}
+.divTwoHov {
+	background-color: #ffb184;
+	border: #ff7f5e dotted 3px;
+	width: 500px;
+	padding: 80px;
+	margin-left: 50px;
+	text-align: center;
+
+	transition: background-color 4s;
+}
+.divTwoHov:hover {
+	background-color: #0000ff
+}
+.divThreeHov {
+	background-color: #ebe58e;
+	border: #ffcd45 double 3px;
+	width: 500px;
+	padding: 80px;
+	margin-left: 50px;
+	text-align: center;
+
+	transition: width 2s;
+}
+.divThreeHov:hover {
+	width: 200px;
+}
+
+
+.celOne {
+	background-color: #ff4949;
+	color: #00008b;
+}
+.celTwo {
+	background-color: #ff7a2c;
+	color: #2e1b36;
+}
+.celThree {
+	background-color: #ffee2c;
+	color: #550000;
+}
+.celFour {
+	background-color: #c3fdb5;
+	color: #468828;
+}
+.celFive {
+	background-color: #8dbeff;
+	color: #0000ff;
+}
+
+
+.relPos {
+	position: relative;
+	left: 800px;
+	bottom: 50px;
+}
+.absPos {
+	position: absolute;
+	top: 4200px;
+	left: 900px;
+}
+.fixPos {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+
+.horShadowSmall {
+	text-shadow: 2px 3px 3px #414141;
+}
+.horShadowBig {
+	text-shadow: 50px 3px 3px #414141;
+}
+.verShadowSmall {
+	text-shadow: 2px 3px 3px #414141;
+}
+.verShadowBig {
+	text-shadow: 2px 25px 3px #414141;
+}
+.blurShadowSmall {
+	text-shadow: 2px 3px 3px #414141;
+}
+.blurShadowBig {
+	text-shadow: 2px 3px 8px #414141;
+}

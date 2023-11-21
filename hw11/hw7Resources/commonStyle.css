@@ -1,0 +1,246 @@
+:root{
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+* ::after ::before {
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0;
+	display: flex;
+	flex-flow: column;
+}
+
+header {
+	background-color: #fcf765;
+	
+	height: 150px;
+	margin-left: -45px;
+	margin-right: -45px;
+	margin-top: -10px;
+	
+	border-bottom: solid;
+}
+
+@font-face {
+	font-family: donuts;
+	src: url("Monday Donuts.otf");
+}
+
+@font-face {
+	font-family: handlee;
+	src: url("Handlee-Regular.ttf");
+}
+
+header p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: donuts;
+	font-size: 100px;
+	
+}
+
+header img.explosionImgLeft  {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+header img.explosionImgRight  {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0 auto;
+	list-style-type: none;
+	font-family: donuts;
+}
+
+nav a:link, nav a:visited, nav button {
+	background-color: #fcf765;
+	color: #850e05;
+	
+	display: inline-block;
+	
+	text-align: center;
+	text-decoration: none;
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 40px;
+	
+	border-left: solid #000000 2px;
+	border-right: solid #000000 2px;
+	border-bottom: solid #000000 2px;
+}
+
+nav a:hover, nav button:hover {
+	background-color: #fffca6;
+}
+
+/* Dropdown */
+nav button {
+	padding: 0;
+	margin: 0 auto;
+	font-family: donuts;
+	font-size: 20px;
+
+	border-top: 0;
+}
+
+nav .dropdown {
+	position: relative;
+}
+
+nav .dropdown-content {
+	display: none;
+
+	position: absolute;
+
+	width: 100%;
+}
+
+nav .dropdown:hover .dropdown-content {
+	display: block;
+}
+
+h1, h2 {
+	font-family: donuts;
+	margin-bottom: 0;
+}
+
+/* column stuff */
+
+* {
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* end of column stuff */
+
+main section p, main section pre {
+	font-family: handlee;
+	font-size: 18px;
+
+	padding-left: 12px;
+}
+
+main section {
+	background-color: #fffca6;
+	border: 1px solid #850e05;
+	box-shadow: 0 4px 8px #5c5b3f;
+	border-radius: 6px;
+	margin: 25px 0px 25px 0px;
+	padding: 12px 12px 12px 12px;
+}
+
+pre { /* Fixed the left and right scrolling issue */
+	white-space: pre-wrap;
+}
+
+main section img {
+	float: right;
+	max-height: 120px;
+	max-width: 250px;
+	width: auto;
+}
+
+/* Inputs */
+
+main section label {
+	display: inline-block;
+	text-align: right;
+	padding-right: 5px;
+}
+
+main section input[type="text"] {
+	background-color: #fcf765;
+	border: solid 2px #850e05;
+	width: 120px;
+	height: 32px;
+}
+
+main section button {
+	width: 160px;
+	display: block;
+	margin: auto;
+	background-color: #fcf765;
+	font-size: 20px;
+}
+
+main section button:hover {
+	background-color: #f3ee61;
+}
+
+/* End Inputs */
+
+aside section p {
+	font-family: handlee;
+	font-size: 18px;
+
+	padding-left: 12px;
+}
+
+aside section {
+	background-color: #fcf765;
+	border: 1px solid #850e05;
+	box-shadow: -4px 4px 8px #5c5b3f;
+	border-radius: 6px;
+	margin: 25px 0px 25px 0px;
+	padding: 12px 12px 12px 12px;
+}
+
+footer section p {
+	text-align: center;
+	margin: auto auto auto auto;
+	
+	padding-top: 15px;
+	
+	font-family: handlee;
+	font-size: 15px;
+	
+}
+
+footer {
+	background-color: #fcf765;
+	
+	height: 100px;
+	margin-left: -45px;
+	margin-right: -45px;
+	margin-bottom: -10px;
+	
+	border-top: solid;
+}

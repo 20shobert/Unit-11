@@ -1,0 +1,19 @@
+#runningManPic {
+    float: none;
+
+    max-height: 275px;
+    max-width: auto;
+}
+
+#picture {
+    text-align: center;
+}
+
+#caption {
+    text-align: center;
+}
+
+main section button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

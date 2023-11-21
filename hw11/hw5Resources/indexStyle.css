@@ -1,0 +1,88 @@
+main section p, main section pre {
+	font-family: handlee;
+	font-size: 18px;
+
+	padding-left: 12px;
+}
+
+main {
+	border-right: solid;
+	border-radius: 6px;
+}
+
+main section {
+	background-color: #fffca6;
+	border: 1px solid #850e05;
+	box-shadow: -4px 4px 8px #5c5b3f;
+	border-radius: 6px;
+	margin: 25px 0px 25px 0px;
+	padding: 12px 12px 12px 12px;
+
+	transition: box-shadow 1s;
+}
+
+main section:hover {
+	box-shadow: -8px 8px 8px #5c5b3f;
+}
+
+main section img {
+	float: right;
+	max-height: 120px;
+	height: auto;
+}
+
+aside section p {
+	font-family: handlee;
+	font-size: 18px;
+
+	padding-left: 12px;
+}
+
+aside {
+	border-left: solid;
+	border-radius: 6px;
+}
+
+aside section {
+	background-color: #fcf765;
+	border: 1px solid #850e05;
+	box-shadow: -4px 4px 8px #5c5b3f;
+	border-radius: 6px;
+	margin: 25px 0px 25px 0px;
+	padding: 12px 12px 12px 12px;
+}
+
+aside section img.characterImg {
+    float: right;
+	max-height: 250px;
+	height: auto;
+}
+
+aside section img.abilityImg {
+    float: right;
+	max-height: 100px;
+	height: auto;
+
+    margin-left: 5px;
+}
+
+.celOne {
+	background-color: #ff4949;
+	color: #00008b;
+}
+.celTwo {
+	background-color: #ff7a2c;
+	color: #2e1b36;
+}
+.celThree {
+	background-color: #ffee2c;
+	color: #550000;
+}
+.celFour {
+	background-color: #c3fdb5;
+	color: #468828;
+}
+.celFive {
+	background-color: #8dbeff;
+	color: #0000ff;
+}
