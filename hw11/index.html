@@ -16,8 +16,8 @@
 
 <header>
 	<p>Spencer Hobert's CS2350</p>
-	<img class="explosionImgLeft" src="hw7Resources/explosion.png" alt="Explosion" height="150px">
-	<img class="explosionImgRight" src="hw7Resources/explosion.png" alt="Explosion" height="150px">
+	<img class="explosionImgLeft" src="hw7Resources/explosion.png" alt="Explosion" height="150px" onclick="audio.play()">
+	<img class="explosionImgRight" src="hw7Resources/explosion.png" alt="Explosion" height="150px" onclick="audio.pause()">
 	
 </header>
 
@@ -251,6 +251,11 @@ Once you get this information, type this into the password field, and click ente
 		</section>
 	</footer>
 </div>
+
+<script type="text/javascript">
+	const audio = new Audio();
+	audio.src = "hw11Resources/carCrash.mp3"
+</script>
 
 </body>
 </html>
